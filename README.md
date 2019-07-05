@@ -1,6 +1,6 @@
-# Rails API-only boilerplate with devise & JWT & graphQL
+# Rails API-only boilerplate with devise & JWT & GraphQL
 
-This is a boilerplate to build your next SaaS product. It's a RubyOnRails 5 API only backend with Authentication and GrpahQL API. It works nicely together with clients made with **React.js & React.Native** or any other frontend which implements the [JSON Web Tokens](https://jwt.io/introduction/) philosophy. We have a demo frontend made with [gatsbyJS](https://www.gatsbyjs.org/) available here: <https://gatsby-redux.zauberware.com/>.
+This is a boilerplate to build your next SaaS product. It's a RubyOnRails 5 API only backend with Authentication and GraphQL API. It works nicely together with clients made with **React.js & React.Native** or any other frontend which implements the [JSON Web Tokens](https://jwt.io/introduction/) philosophy. We have a demo frontend made with [gatsbyJS](https://www.gatsbyjs.org/) available here: <https://gatsby-redux.zauberware.com/>.
 
 ## Versions
 
@@ -17,7 +17,7 @@ or
 clone the repo:
 
 ```sh
-git clone my-saas-backend https://github.com/zauberware/rails-devise-graphql
+git clone https://github.com/zauberware/rails-devise-graphql my-saas-backend
 cd my-saas-backend
 ```
 
@@ -51,7 +51,7 @@ While this is an API-only application you will not be able to access any routes 
 
 Point the GraphQL IDE to `http://0.0.0.0:3000/graphql`
 
-**Note:** Make sure that the `.env` file is included in the root of your project and you have defined `CLIENT_URL` and `DEVISE_JWT_SECRET_KEY`. You can try out the [Demo frontend](https://github.com/zauberware/gatsby-starter-redux-saas) or you implement the actions in any other client. Read more about the JSON Web Token [this](https://github.com/zauberware/rails-devise-graphql). There are plenty of packages available.
+**Note:** Make sure that the `.env` file is included in the root of your project and you have defined `CLIENT_URL` and `DEVISE_JWT_SECRET_KEY`. You can try out the [Demo frontend](https://github.com/zauberware/gatsby-starter-redux-saas) or you implement the actions in any other client. Read more about the JSON Web Token [here](https://en.wikipedia.org/wiki/JSON_Web_Token). There are plenty of packages available.
 
 ## What's included?
 
@@ -72,7 +72,7 @@ The app uses [devise](https://github.com/plataformatec/devise)'s logic for authe
 Protect your app and only allow specific domains to access your API. Set `CLIENT_URL=` in `.env` to your prefered client. If you need advanced options please change the CORS settings here `config/initializers/cors.rb`.
 
 ### 6. App server
-The app uses [Puma](https://github.com/puma/puma) as the web serber. It is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications in development and production.
+The app uses [Puma](https://github.com/puma/puma) as the web server. It is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications in development and production.
 
 ### 7. Testing
 
